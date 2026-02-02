@@ -1,0 +1,23 @@
+
+---
+apiVersion: v1
+kind: Secret
+metadata:
+  name: s3-secret
+  namespace: ml
+  annotations:
+    serving.kserve.io/s3-endpoint: s3.amazonaws.com
+    serving.kserve.io/s3-usehttps: "1"
+    serving.kserve.io/s3-region: eu-central-1
+type: Opaque
+stringData:
+  AWS_ACCESS_KEY_ID: "AKIA2BPBDVUABJ3NYLH6"
+  AWS_SECRET_ACCESS_KEY: "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"
+---
+apiVersion: v1
+kind: ServiceAccount
+metadata:
+  name: sa-s3-access
+  namespace: ml
+secrets:
+- name: s3-secret
