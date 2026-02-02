@@ -35,7 +35,7 @@ print(f"AUC-ROC: {auc:.4f}")
 os.makedirs('models', exist_ok=True)
 
 # Save model
-with open('models/churn_model1.pkl', 'wb') as f:
+with open('models/churn_model.pkl', 'wb') as f:
     pickle.dump(model, f)
 
 print("Model saved to models/churn_model.pkl")
