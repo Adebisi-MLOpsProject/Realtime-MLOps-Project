@@ -11,8 +11,8 @@ metadata:
     serving.kserve.io/s3-region: eu-central-1
 type: Opaque
 stringData:
-  AWS_ACCESS_KEY_ID: "AKIA2BPBDVUABJ3NYLH6"
-  AWS_SECRET_ACCESS_KEY: "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"
+  AWS_ACCESS_KEY_ID: ""
+  AWS_SECRET_ACCESS_KEY: ""
 ---
 apiVersion: v1
 kind: ServiceAccount
